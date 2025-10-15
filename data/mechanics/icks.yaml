@@ -1,0 +1,39 @@
+ickminer:
+  name: "Heavy Mining"
+  description: "Initially specialize in heavy mining. Begin with more mining Stations."
+  gifts:
+    materials:
+      - slop: 50
+      - sups: 50
+
+    buildings:
+      miningStation: 4
+      headquarters: 1
+    crew:
+ickfarmer:
+  name: "Gastronomer"
+  description: "Initially specialize in farming and food production."
+  gifts:
+    materials:
+      - slop: 50
+      - sups: 50
+
+    buildings:
+      miningStation: 1
+      hydroFarm: 1
+      gastroHut: 2
+      headquarters: 1
+    crew:
+ickrefiner:
+  name: "Refiner"
+  description: "Take lowly matarials, and make them better!"
+  gifts:
+    materials:
+      - slop: 50
+      - sups: 50
+
+    buildings:
+      refinery: 3
+      dynamicsCenter: 1
+      headquarters: 1
+    crew:    

@@ -1,0 +1,13 @@
+info:
+  name: "Strap"
+  description: "The first settled roid in Juno's Belt. Has nearly everything we need."
+yields:
+  ice: .25
+  lowMetals: .25
+  highMetals: .25
+  dust: .25
+  stellum: 0
+development:
+  totalPlots: 500
+  occupiedPlots: 25
+
