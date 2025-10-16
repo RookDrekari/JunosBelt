@@ -1,3 +1,5 @@
+# Initial Competency Kits
+
 ickminer:
   name: "Heavy Mining"
   description: "Initially specialize in heavy mining. Begin with more mining Stations."
@@ -33,7 +35,60 @@ ickrefiner:
       - sups: 50
 
     buildings:
-      refinery: 3
+      alloyForge: 3
       dynamicsCenter: 1
       headquarters: 1
     crew:    
+ickLogistics:
+  name: "Logistics Coordinator"
+  description: "Specialize in logistics and transportation."
+  gifts:
+    materials:
+      - slop: 50
+      - sups: 50
+
+    buildings:
+      logisticsHub: 1
+      headquarters: 1
+      droneBay: 1
+      warehouse: 2
+    vehicles:
+      droneLogistics: 20
+    crew:
+ickManufacturer:
+  name: "Prefab Specialist"
+  description: "Specialize in manufacturing vital prefabs."
+  gifts:
+    materials:
+      - slop: 50
+      - sups: 50
+
+    buildings:
+      preFabPlant: 3
+      headquarters: 1
+    crew:
+ickFabricator:
+  name: "Factory Specialist"
+  description: "Specialize in advanced manufacturing."
+  gifts:
+    materials:
+      - slop: 50
+      - sups: 50
+
+    buildings:
+      fabPlant: 3
+      headquarters: 1
+    crew:
+ickPower:
+  name: "Power Specialist"
+  description: "Specialize in power generation and management."
+  gifts:
+    materials:
+      - slop: 50
+      - sups: 50
+
+    buildings:
+      solarArray: 2
+      fusionCore: 1
+      headquarters: 1
+    crew:

@@ -1,0 +1,41 @@
+pioneers:
+  name: "Pioneers"
+  description: "General laborers and settlers."
+  type: industry
+  needs:
+    - slop: 1
+    - sups: 1
+    - ams: 1
+engineers:
+  name: "Engineers"
+  description: "Skilled workers for technical tasks."
+  type: industry
+  needs:
+    - slop: 1
+    - sups: 1
+    - rockHops: 1
+    - tools: 1
+clerks:
+  name: "Clerks"
+  description: "Administrative and support staff."
+  type: service
+  needs:
+    - slop: 1
+    - sups: 1
+    - ams: 1
+cooks:
+  name: "Cooks"
+  description: "Prepare food for the crew."
+  type: service
+  needs:
+    - slop: 1
+    - sups: 1
+police:
+  name: "Police"
+  description: "Maintain security and order."
+  type: security
+  needs:
+    - slop: 1
+    - sups: 1
+    - smallArms: 1
+

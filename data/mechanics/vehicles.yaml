@@ -1,0 +1,36 @@
+droneSecurity:
+   name: "Security Drones"
+   description: "Security drones to protect your assets."
+   tags:
+     - security
+     - drones
+   secBandwidth: 5
+droneLogistics:
+   name: "Logistics Drones"
+   description: "Drones to assist with logistics and transportation."
+   tags:
+     - logistics
+     - drones
+   logBandwidth: 5
+droneMining:
+    name: "Mining Drones"
+    description: "Drones specialized in mining operations."
+    tags:
+      - mining
+      - drones
+shuttle:
+  name: "Shuttle"
+  description: "A small shuttle for transporting personnel."
+  tags:
+    - transport
+    - shuttle
+  speed: 10
+  personnelCapacity: 100
+freighter:
+  name: "Freighter"
+  description: "A large freighter for transporting goods."
+  tags:
+    - transport
+    - freighter
+  speed: 5
+  cargoCapacity: 250

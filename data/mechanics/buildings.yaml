@@ -1,0 +1,307 @@
+miningStation:
+  name: "Mining Station"
+  description: "A basic mining station. Extracts raw materials from nearby asteroids."
+  tags:
+    - mining
+    - extractor
+  buildCost:
+    matarials:
+      - bucc: 20
+      - buee: 5
+      - bumm: 15
+  operations:
+    powBandwidth: 5
+    logBandwidth: 2
+    crew:
+      - pioneers: 50
+  
+gastroHut:
+  name: "Gastro Hut"
+  description: "A small food production hut. Produces basic food supplies for the crew."
+  tags:
+    - food
+    - production
+  buildCost:
+    matarials:
+      - bucc: 10
+      - buee: 10
+      - bumm: 5
+  operations:
+    powBandwidth: 3
+    logBandwidth: 1
+    crew:
+      - cooks: 30
+alloyForge:
+  name: "Alloy Forge"
+  description: "A facility for refining raw materials into alloys used in advanced manufacturing."
+  tags:
+    - refining
+    - production
+  buildCost:
+    matarials:
+      - bucc: 30
+      - buee: 20
+      - bumm: 25
+  operations:
+    powBandwidth: 7
+    logBandwidth: 3
+    crew:
+      - engineers: 40
+dynamicsCenter:
+  name: "Dynamics Center"
+  description: "A center for advanced material processing and refinement."
+  tags:
+    - refining
+    - advanced 
+  buildCost:
+    matarials:
+      - bucc: 40
+      - buee: 30
+      - bumm: 30 
+  operations:
+    powBandwidth: 10
+    logBandwidth: 5
+    crew:
+      - engineers: 60
+headquarters:
+  name: "Headquarters"
+  description: "The central hub for managing operations and coordinating activities."
+  tags:
+    - command
+    - management
+  buildCost:
+    matarials:
+      - bucc: 50
+      - buee: 40
+      - bumm: 20
+  operations:
+    powBandwidthProduced: 15
+    logBandwidthProduced: 10
+    lifeBandwidthProduced: 50
+    crew:
+      - clerks: 50
+    personnelCapacity: 500
+    cargoCapacity: 200
+droneShop:
+  name: "Drone Shop"
+  description: "A facility for building and maintaining drones used in various operations."
+  tags:
+    - vehicle
+    - production
+  buildCost:
+    matarials:
+      - bucc: 25
+      - buee: 15
+      - bumm: 10
+  operations:
+    powBandwidth: 6
+    logBandwidth: 4
+    crew:
+      - engineers: 30
+shipyard:
+  name: "Shipyard"
+  description: "A large facility for constructing and repairing spacecraft."
+  tags:
+    - vehicle
+    - construction
+  buildCost:
+    matarials:
+      - bucc: 60
+      - buee: 50
+      - bumm: 40
+  operations:
+    powBandwidth: 12
+    logBandwidth: 8
+    crew:
+      - engineers: 70
+      - clerks: 20
+fabPlant:
+  name: "Fabrication Plant"
+  description: "A high-tech facility for fabricating advanced components and equipment."
+  tags:
+    - manufacturing
+    - advanced
+  buildCost:
+    matarials:
+      - bucc: 70
+      - buee: 60
+      - bumm: 50
+  operations:
+    powBandwidth: 15
+    logBandwidth: 10
+    crew:
+      - engineers: 80
+      - clerks: 30
+hydroFarm:
+  name: "Hydroponic Farm"
+  description: "A farm that uses hydroponic techniques to grow food in a controlled environment."
+  tags:
+    - food
+    - farming
+  buildCost:
+    matarials:
+      - bucc: 20
+      - buee: 15
+      - bumm: 10
+  operations:
+    powBandwidth: 4
+    logBandwidth: 2
+    crew:
+      - pioneers: 20
+preFabPlant:
+  name: "Pre-Fabrication Plant"
+  description: "A facility for pre-fabricating components to speed up construction and manufacturing."
+  tags:
+    - manufacturing
+    - prefabrication
+  buildCost:
+    matarials:
+      - bucc: 40
+      - buee: 30
+      - bumm: 20
+  operations:
+    powBandwidth: 8
+    logBandwidth: 5
+    crew:
+      - engineers: 50
+      - clerks: 20
+recycler:
+  name: "Recycler"
+  description: "A facility for recycling waste materials into usable resources."
+  tags:
+    - recycling
+    - sustainability
+  buildCost:
+    matarials:
+      - bucc: 30
+      - buee: 20
+      - bumm: 15
+  operations:
+    powBandwidth: 5
+    logBandwidth: 3
+    crew:
+      - pioneers: 30
+      - engineers: 20
+refinery:
+  name: "Refinery"
+  description: "A facility for refining raw materials into higher-quality products."
+  tags:
+    - refining
+    - production
+  buildCost:
+    matarials:
+      - bucc: 50
+      - buee: 40
+      - bumm: 30
+  operations:
+    powBandwidth: 10
+    logBandwidth: 6
+    crew:
+      - engineers: 70
+      - clerks: 30
+droneBay:
+  name: "Drone Bay"
+  description: "A bay for launching and recovering drones used in various operations."
+  tags:
+    - vehicle
+    - operations
+    - drones
+  buildCost:
+    matarials:
+      - bucc: 35
+      - buee: 25
+      - bumm: 20
+  operations:
+    powBandwidth: 7
+    logBandwidth: 4
+    crew:
+      - engineers: 40
+      - clerks: 10
+    droneCapacity: 50
+solarArray:
+  name: "Solar Array"
+  description: "Panels that convert solar energy into electrical power."
+  tags:
+    - power
+    - renewable
+  buildCost:
+    matarials:
+      - bucc: 15
+      - buee: 10
+      - bumm: 5
+      - solarCells: 10
+  operations:
+    powBandwidthProduced: 8
+    logBandwidth: 1
+    crew:
+      - pioneers: 10
+barracks:
+  name: "Barracks"
+  description: "Living quarters for the crew."
+  tags:
+    - housing
+    - crew
+  buildCost:
+    matarials:
+      - bucc: 25
+      - buee: 15
+      - bumm: 10
+  operations:
+    powBandwidth: 4
+    logBandwidth: 2
+    personnelCapacity: 100
+secOutpost:
+  name: "Security Outpost"
+  description: "A facility for maintaining security and order."
+  tags:
+    - security
+    - operations
+    - police
+    - drones
+  buildCost:
+    matarials:
+      - bucc: 30
+      - buee: 20
+      - bumm: 15
+  operations:
+    powBandwidth: 6
+    logBandwidth: 3
+    crew:
+      - police: 20
+    droneCapacity: 10
+laboratory:
+  name: "Laboratory"
+  description: "A research facility for scientific experiments and development."
+  tags:
+    - medical
+    - health
+    - research
+    - scientific
+  buildCost:
+    matarials:
+      - bucc: 40
+      - buee: 30
+      - bumm: 20
+  operations:
+    powBandwidth: 8
+    logBandwidth: 4
+    crew:
+      - clerks: 20
+      - cooks: 10
+warehouse:
+  name: "Warehouse"
+  description: "A storage facility for goods and materials."
+  tags:
+    - storage
+    - logistics
+  buildCost:
+    matarials:
+      - bucc: 20
+      - buee: 15
+      - bumm: 10
+  operations:
+    powBandwidth: 3
+    logBandwidth: 5
+    cargoCapacity: 1000
+    crew:
+      - clerks: 10

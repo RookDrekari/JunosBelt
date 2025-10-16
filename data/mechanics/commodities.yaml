@@ -1,0 +1,611 @@
+slop:
+  volume: 1
+  name: "Juno's Slop"
+  description: "Easy food. Not very tasty."
+  fractional: true
+  tags:
+    - consumable
+  production:
+    ticks: 1
+    building: gastroHut
+    inputs:
+      - item: ice
+        amount: 1
+      - item: astroGrass
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 25
+      - item: hotSink
+        amount: 1
+sups:
+  volume: 1
+  name: "Juno's Sups"
+  description: "A simple drink to quench your thirst."
+  fractional: true
+  tags:
+    - consumable
+  production:
+    ticks: 1
+    building: gastroHut
+    inputs:
+      - item: ice
+        amount: 1
+      - item: astroGrass
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 25
+      - item: hotSink
+        amount: 1
+ice:
+  volume: 1
+  name: "Ice"
+  description: "Frozen water, essential for life support and farming."
+  fractional: true
+  tags:
+    - raw
+  production:
+    ticks: 2
+    building: miningStation
+    inputs:
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 20
+      - item: hotSink
+        amount: 1
+lowMetals:
+  volume: 1
+  name: "Low-Grade Metals"
+  description: "Basic metals, useful for construction and manufacturing."
+  fractional: true
+  tags:
+    - raw
+  production:
+    ticks: 2
+    building: miningStation
+    inputs:
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 15
+      - item: hotSink
+        amount: 1
+highMetals:
+  volume: 1
+  name: "High-Grade Metals"
+  description: "Refined metals, stronger and more durable."
+  fractional: true
+  tags:
+    - raw
+  production:
+    ticks: 3
+    building: miningStation
+    inputs:
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 10
+      - item: hotSink
+        amount: 1
+lowAlloys:
+  volume: 1
+  name: "Low-Grade Alloys"
+  description: "Alloys made from low-grade metals, used in various applications."
+  fractional: true
+  tags:
+    - refined
+  production:
+    ticks: 3
+    building: alloyForge
+    inputs:
+      - item: lowMetals
+        amount: 2
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 10
+      - item: hotSink
+        amount: 1
+highAlloys:
+  volume: 1
+  name: "High-Grade Alloys"
+  description: "High-grade alloys, essential for advanced manufacturing."
+  fractional: true
+  tags:
+    - refined
+  production:
+    ticks: 4
+    building: alloyForge
+    inputs:
+      - item: highMetals
+        amount: 2
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 8
+      - item: hotSink
+        amount: 1
+stellum:
+  volume: 1
+  name: "Stellum"
+  description: "A rare and valuable material, prized for its unique properties."
+  fractional: true
+  tags:
+    - raw
+  production:
+    ticks: 5
+    building: miningStation
+    inputs:
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+astroGrass:
+  volume: 1
+  name: "Astro Grass"
+  description: "A hardy plant that grows in the harsh conditions of space."
+  fractional: true
+  tags:
+    - raw
+  production:
+    ticks: 2
+    building: hydroFarm
+    inputs:
+      - item: ice
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 10
+      - item: hotSink
+        amount: 1
+bucc:
+  volume: 1
+  name: "Broad Use Construction Components"
+  description: "Modular construction parts used in various building projects."
+  frasctional: false
+  tags:
+    - prefab
+  production:
+    ticks: 2
+    building: preFabPlant
+    inputs:
+      - item: lowAlloys
+        amount: 2
+      - item: highAlloys
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+bumm:
+  volume: 1
+  name: "Broad Use Mechanical Minutiae"
+  description: "Small mechanical parts used in a variety of machines."
+  fractional: false
+  tags:
+    - prefab
+  production:
+    ticks: 2
+    building: preFabPlant
+    inputs:
+      - item: lowAlloys
+        amount: 1
+      - item: highAlloys
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+buee:
+  volume: 1
+  name: "Broad Use Electronic Essentials"
+  description: "Essential electronic components used in many devices."
+  fractional: false
+  tags:
+    - prefab
+  production:
+    ticks: 2
+    building: preFabPlant
+    inputs:
+      - item: highAlloys
+        amount: 1
+      - item: circuitry
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+buvv:
+  volume: 1
+  name: "Broad Use Vehicle Vitals"
+  description: "Key components used in the construction and maintenance of vehicles."
+  fractional: false
+  tags:
+    - prefab
+  production:
+    ticks: 2
+    building: preFabPlant
+    inputs:
+      - item: lowAlloys
+        amount: 1
+      - item: highAlloys
+        amount: 1
+      - item: circuitry
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+oxy:
+  volume: 1
+  name: "Oxygen"
+  description: "Essential for life support and various industrial processes."
+  fractional: true
+  tags:
+    - raw
+  production:
+    ticks: 2
+    building: recycler
+    inputs:
+      - item: ice
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 20
+      - item: hotSink
+        amount: 1
+ams:
+  volume: 1
+  name: "Adhesive Medical Strips"
+  description: "Medical supplies used for treating wounds and injuries."
+  fractional: true
+  tags:
+    - consumable
+  production:
+    ticks: 2
+    building: laboratory
+    inputs:
+      - item: astroGrass
+        amount: 1
+      - item: lowAlloys
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 10
+      - item: hotSink
+        amount: 1
+solarCells:
+  volume: 1
+  name: "Solar Cells"
+  description: "Photovoltaic cells used to convert sunlight into electricity."
+  tags:
+    - component
+  production:
+    ticks: 3
+    building: fabPlant
+    inputs:
+      - item: highAlloys
+        amount: 1
+      - item: circuitry
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+batteries:
+  volume: 1
+  name: "Batteries"
+  description: "Energy storage devices used to power various systems."
+  tags:
+    - dynamic
+  production:
+    ticks: 3
+    building: fabPlant
+    inputs:
+      - item: lowAlloys
+        amount: 1
+      - item: highAlloys
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+circuitry:
+  volume: 1
+  name: "Circuitry"
+  description: "Electronic components used in a wide range of applications."
+  tags:
+    - component
+  production:
+    ticks: 3
+    building: fabPlant
+    inputs:
+      - item: highMetals
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+droneMining:
+  volume: 1
+  name: "Mining Drones"
+  description: "Autonomous drones used for mining operations."
+  tags:
+    - vehicle
+  production:
+    ticks: 4
+    building: droneShop
+    inputs:
+      - item: buvv
+        amount: 2
+      - item: batteries
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
+droneLogistics:
+  volume: 1
+  name: "Logistics Drones"
+  description: "Drones used for transporting goods and materials."
+  tags:
+    - vehicle
+  production:
+    ticks: 4
+    building: droneShop
+    inputs:
+      - item: buvv
+        amount: 2
+      - item: batteries
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 3
+      - item: hotSink
+        amount: 1
+droneSecurity:
+  volume: 1
+  name: "Security Drones"
+  description: "Drones used for surveillance and security purposes."
+  tags:
+    - vehicle
+  production:
+    ticks: 4
+    building: droneShop
+    inputs:
+      - item: buvv
+        amount: 2
+      - item: batteries
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 1
+      - item: hotSink
+        amount: 1
+shuttle:
+  volume: 1
+  name: "Shuttle"
+  description: "A small spacecraft used for short-range travel."
+  tags:
+    - vehicle
+  production:
+    ticks: 6
+    building: shipyard
+    inputs:
+      - item: buvv
+        amount: 5
+      - item: batteries
+        amount: 2
+      - item: fuel
+        amount: 2
+      - item: heatSink
+        amount: 2
+    outputs:
+      - item: baseYield
+        amount: 1
+      - item: hotSink
+        amount: 2
+freighter:
+  volume: 1
+  name: "Freighter"
+  description: "A large spacecraft used for transporting goods and materials."
+  tags:
+    - vehicle
+  production:
+    ticks: 10
+    building: shipyard
+    inputs:
+      - item: buvv
+        amount: 10
+      - item: batteries
+        amount: 4
+      - item: fuel
+        amount: 4
+      - item: heatSink
+        amount: 4
+    outputs:
+      - item: baseYield
+        amount: 1
+      - item: hotSink
+        amount: 4
+fuel:
+  volume: 1
+  name: "Fuel"
+  description: "Propellant used to power spacecraft and other vehicles."
+  tags:
+    - refined
+  production:
+    ticks: 2
+    building: refinery
+    inputs:
+      - item: ice
+        amount: 1
+      - item: dust
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 10
+      - item: hotSink
+        amount: 1
+heatSink:
+  volume: 1
+  name: "Heat Sink"
+  description: "A device used to dissipate heat from various systems."
+  tags:
+    - dynamic
+  production:
+    ticks: 2
+    building: fabPlant
+    inputs:
+      - item: lowAlloys
+        amount: 1
+      - item: highAlloys
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+hotSink:
+  volume: 1
+  name: "Hot Sink"
+  description: "A hot heat sink. Needs to be cooled down before use."
+  tags:
+    - dynamic
+  production:
+    ticks: 1
+    building: dynamicsCenter
+    inputs:
+      - item: hotSink
+        amount: 5
+    outputs:
+      - item: heatSink
+        amount: 3
+batteriesCharged:
+  volume: 1
+  name: "Charged Batteries"
+  description: "Batteries that have been charged and are ready for use."
+  tags:
+    - dynamic
+  production:
+    ticks: 1
+    building: dynamicsCenter
+    inputs:
+      - item: batteries
+        amount: 5
+    outputs:
+      - item: batteriesCharged
+        amount: 3
+rockHops:
+  volume: 1
+  name: "Rock Hops"
+  description: "A popular alcoholic beverage made from fermented astro grass."
+  tags:
+    - consumable
+  production:
+    ticks: 2
+    building: gastroHut
+    inputs:
+      - item: astroGrass
+        amount: 2
+      - item: ice
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 15
+      - item: hotSink
+        amount: 1
+tools:
+  volume: 1
+  name: "Tools"
+  description: "Basic tools used for maintenance and repairs."
+  tags:
+    - consumable
+  production:
+    ticks: 2
+    building: fabPlant
+    inputs:
+      - item: lowAlloys
+        amount: 1
+      - item: highAlloys
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 10
+      - item: hotSink
+        amount: 1
+smallArms:
+  volume: 1
+  name: "Small Arms"
+  description: "Light weaponry used for personal defense."
+  tags:
+    - consumable
+  production:
+    ticks: 3
+    building: fabPlant
+    inputs:
+      - item: lowAlloys
+        amount: 1
+      - item: highAlloys
+        amount: 1
+      - item: circuitry
+        amount: 1
+      - item: heatSink
+        amount: 1
+    outputs:
+      - item: baseYield
+        amount: 5
+      - item: hotSink
+        amount: 1
